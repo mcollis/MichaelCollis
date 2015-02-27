@@ -1,0 +1,258 @@
+doctype html
+html.no-js(ng-app='mcollis')
+  head
+    meta(charset='utf-8')
+    title mcollis
+    meta(name='description', content='')
+    meta(name="viewport" content="width=600")
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+    // build:css({.tmp/serve,src}) styles/vendor.css
+    link(rel='stylesheet', href='app/vendor.css')
+    // bower:css
+    // run `gulp wiredep` to automaticaly populate bower styles dependencies
+    // endbower
+    // endbuild
+    // build:css({.tmp/serve,src}) styles/app.css
+    // inject:css
+    // css files will be automaticaly insert here
+    // endinject
+    // endbuild
+  body
+
+    .container(sections="")
+      .heading.section
+        h1
+          | Michael Collis
+          small  Developer
+
+      div(section="bio")
+        h2 Bio
+        p Michael Collis is a Team Lead/Senior Developer living in Buffalo, New York currently employed by the Hoboken, New Jersey based firm Studio llc.
+        p Hard working, passionate and reliable. An extremely quick learner who enjoys solving complex problems. A well rounded Full Stack developer with experience in all aspects of the development phase. Traditional a LAMP stack proponent who now leans heavily on the MEAN stack. An advocate of web standards and the practice of the separation between content, presentation and behavior.
+
+      div(section="resume")
+        h2 Resume
+
+        h3 Experience
+
+        dl.experience
+          dt
+            span.position Team Lead/Senior Developer.
+            strong.employer  Studio llc.
+            span.location  Buffalo, NY
+            span.date.pull-right  2008 - Present
+          dd
+            p Heavily active in promoting standards and evolving processes to achieve a more efficient environment. Involved in all areas of development from rapid prototyping via AngularJS to developing REST APIs for use with mobile platforms, custom admin panels, single-page applications, to your every-day WordPress or Drupal build. Aid the management team in gathering and understanding functional requirements, selecting appropriate technologies and speaking on their behalf to clients. Try and help younger, less experienced developers grow and learn through tutelage.
+
+        dl.experience
+          dt
+            span.position Flash/Web Developer.
+            strong.employer  Hyperlocal Media.
+            span.location  Buffalo, NY
+            span.date.pull-right  2007 - 2008
+          dd
+            p Primary duties consisted of developing rich internet applications using Actionscript 2/3, PHP, (X)HTML, CSS and Javascript. Also create websites using the PHP CMS framework Drupal.
+
+        dl.experience
+          dt
+            span.position Flash/Web Developer.
+            strong.employer  Schneider Digital.
+            span.location  Buffalo, NY
+            span.date.pull-right  2005 - 2007
+          dd
+            p Primary duties consisted of developing rich internet applications using such technologies as Actionscript 2/3, PHP, MySQL, (X)HTML, CSS and Javascript. Secondary duties included interface design, project management, client consulting and training. Utilized the CMS MovableType and WordPress along with the MVC framework CakePHP.
+
+        h3 Education
+
+        dl.education
+          dt
+            strong.position SUNY at Buffalo.
+            span.location  Buffalo, NY
+            span.date.pull-right  May 2004
+          dd
+            p Bachelor of Arts – Digital Media Studies
+
+        h3 Skills
+
+        dl.dl-horizontal
+          dt Version Control
+          dd
+            a.label.label-default(href="http://git-scm.com" target="_blank") GIT
+            | &nbsp;
+            a.label.label-default(href="https://subversion.apache.org" target="_blank") SVN
+          dt Package Manager
+          dd
+            a.label.label-default(href="https://www.npmjs.com" target="_blank") NPM
+            | &nbsp;
+            a.label.label-default(href="http://bower.io" target="_blank") Bower
+            | &nbsp;
+            a.label.label-default(href="https://getcomposer.org" target="_blank") Composer
+          dt Task Runner
+          dd
+            a.label.label-default(href="http://gulpjs.com" target="_blank") Gulp
+            | &nbsp;
+            a.label.label-default(href="http://gruntjs.com" target="_blank") Grunt
+          dt Front-end Tech
+          dd
+            a.label.label-default(href="http://angularjs.org" target="_blank") AngularJS
+            | &nbsp;
+            a.label.label-default(href="http://sass-lang.com" target="_blank") Sass
+            | &nbsp;
+            a.label.label-default(href="http://getbootstrap.com" target="_blank") Bootstrap
+            | &nbsp;
+            a.label.label-default(href="http://jade-lang.com" target="_blank") Jade
+          dt Back-end Tech
+          dd
+            a.label.label-default(href="http://php.net" target="_blank") PHP
+            | &nbsp;
+            a.label.label-default(href="http://nodejs.org" target="_blank") Node
+          dt Design
+          dd
+            a.label.label-default(href="http://www.photoshop.com" target="_blank") Photoshop
+          dt Content Management
+          dd
+            a.label.label-default(href="https://wordpress.org" target="_blank") Wordpress
+            | &nbsp;
+            a.label.label-default(href="https://www.drupal.org" target="_blank") Drupal
+          dt Platform
+          dd
+            a.label.label-default(href="https://www.apple.com/osx/" target="_blank") OSX
+            | &nbsp;
+            a.label.label-default(href="http://www.ubuntu.com" target="_blank") Ubuntu
+          dt Database
+          dd
+            a.label.label-default(href="http://www.mysql.com" target="_blank") MySQL
+            | &nbsp;
+            a.label.label-default(href="http://www.mongodb.org" target="_blank") MongoDB
+
+
+      div(section="portfolio")
+        h2 Portfolio
+
+        .media
+          .media-left
+            a
+              img.media-object(src="http://placehold.it/150x150")
+          .media-body
+            h4.media-heading Front-end Development
+            p All successful client facing sites require a well planned user interface. Some would say Front-end Development is an art. Striving for small footprints, finely tuned animation, cross-browser compatibility… requires knowledge gained through experience and research.
+            p
+              a.label.label-default(href="http://sass-lang.com" target="_blank") Sass
+              | &nbsp;
+              a.label.label-default(href="http://getbootstrap.com" target="_blank") Bootstrap
+              | &nbsp;
+              a.label.label-default(href="http://jade-lang.com" target="_blank") Jade
+              | &nbsp;
+              a.label.label-default(href="http://angularjs.org" target="_blank") AngularJS
+              | &nbsp;
+              a.label.label-default(href="http://gulpjs.com" target="_blank") Gulp
+        hr
+
+        .media
+          .media-left
+            a
+              img.media-object(src="http://placehold.it/150x150")
+          .media-body
+            h4.media-heading Rapid Prototyping/IA
+            p Visualizing a concept in your head can be a daunting task. Using current technology we can quickly and easily prototype a tangible concept, the benefits of which are invaluable to all parties involved in the planning process.
+            p
+              a.label.label-default(href="http://getbootstrap.com" target="_blank") Bootstrap
+              | &nbsp;
+              a.label.label-default(href="http://angularjs.org" target="_blank") AngularJS
+              | &nbsp;
+              a.label.label-default(href="http://gulpjs.com" target="_blank") Gulp
+        hr
+
+        .media
+          .media-left
+            a
+              img.media-object(src="http://placehold.it/150x150")
+          .media-body
+            h4.media-heading Single-Page Applications
+            p Large web applications have evolved in such a way that the experience is now as seamless as a desktop application. Using Javascript frameworks we can contain the entirety of an application into a single-page, which requires no page refreshes.
+            p
+              a.label.label-default(href="http://angularjs.org" target="_blank") AngularJS
+              | &nbsp;
+              a.label.label-default(href="http://getbootstrap.com" target="_blank") Bootstrap
+              | &nbsp;
+              a.label.label-default(href="http://gulpjs.com" target="_blank") Gulp
+        hr
+
+        .media
+          .media-left
+            a
+              img.media-object(src="http://placehold.it/150x150")
+          .media-body
+            h4.media-heading REST APIs
+            p We find ourselves often times interacting with the same application through different mediums… desktop, mobile, web, etc. APIs are the channel to which data can flow between these different mediums. REST being one common architecture for interacting with web services.
+            p
+              a.label.label-default(href="http://deployd.com" target="_blank") Deployd
+              | &nbsp;
+              a.label.label-default(href="http://loopback.io" target="_blank") LoopBack
+              | &nbsp;
+              a.label.label-default(href="http://www.mongodb.org" target="_blank") MongoDB
+              | &nbsp;
+              a.label.label-default(href="http://symfony.com" target="_blank") Symfony
+              | &nbsp;
+              a.label.label-default(href="http://www.mysql.com" target="_blank") MySQL
+        hr
+
+        .media
+          .media-left
+            a
+              img.media-object(src="http://placehold.it/150x150")
+          .media-body
+            h4.media-heading Content Management Systems
+            p Inevitably our development phase ends and the site lives its life in the client's hands. We hope they use the tools we've built for them to continue growing their product with fresh content.
+            p
+              a.label.label-default(href="https://wordpress.org" target="_blank") WordPress
+              | &nbsp;
+              a.label.label-default(href="https://www.drupal.org" target="_blank") Drupal
+              | &nbsp;
+              a.label.label-default(href="http://angularjs.org" target="_blank") AngularJS
+              | &nbsp;
+              a.label.label-default(href="http://getbootstrap.com" target="_blank") Bootstrap
+        hr
+
+      div(section="contact")
+        h2 Contact
+
+        form.form-horizontal(ng-controller="ContactCtrl as contact" ng-submit="contact.sendEmail()")
+          .form-group
+            label.col-sm-2.control-label Name
+            .col-sm-10
+              input.form-control(type="text" placeholder="Name")
+          .form-group
+            label.col-sm-2.control-label Email
+            .col-sm-10
+              input.form-control(type="email" placeholder="Email")
+          .form-group
+            label.col-sm-2.control-label Comment
+            .col-sm-10
+              textarea.form-control(rows="4" placeholder="Comment")
+          .form-group
+            .col-sm-offset-2.col-sm-10
+              button.btn.btn-default(type="submit") Submit
+
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+
+    // build:js(src) scripts/vendor.js
+    // bower:js
+    // endbower
+    // endbuild
+
+    // build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js
+    // inject:js
+    // endinject
+    // inject:partials
+    // endinject
+    // endbuild
+
+
