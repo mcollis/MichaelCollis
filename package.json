@@ -43,6 +43,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "gulp serve:dist"
+    "start": "gulp serve:dist",
+    "postinstall": "bower install"
   }
 }
