@@ -4,8 +4,6 @@ var gulp = require('gulp');
 
 var paths = gulp.paths;
 
-var debug = require('gulp-debug');
-
 var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del']
 });
