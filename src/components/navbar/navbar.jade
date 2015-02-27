@@ -1,0 +1,8 @@
+.navigation.clearfix
+  ul.nav.nav-pills.pull-left
+    li(ng-repeat="sec in sectionsLeft" ng-class="{active: title == sec.title}")
+      a(ng-href="#/{{sec.title}}") {{sec.title}}
+
+  ul.nav.nav-pills.pull-right
+    li(ng-repeat="sec in sectionsRight" ng-class="{active: title == sec.title}")
+      a(ng-href="#/{{sec.title}}") {{sec.title}}
