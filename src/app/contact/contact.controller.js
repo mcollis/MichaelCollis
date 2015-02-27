@@ -4,8 +4,11 @@
   function ContactCtrl( Mandrill ) {
     var vm = this;
 
-    function sendEmail() {
-      Mandrill.send();
+    function sendEmail( contact ) {
+      Mandrill.send( contact ).then( function( data ) {
+        vm.contact = {};
+        vm.message = 'Message Sent';
+      } );
     }
 
     vm.sendEmail = sendEmail;

@@ -215,24 +215,28 @@ html.no-js(ng-app='mcollis')
         hr
 
       div(section="contact")
-        h2 Contact
+        div(ng-controller="ContactCtrl as contact")
 
-        form.form-horizontal(ng-controller="ContactCtrl as contact" ng-submit="contact.sendEmail()")
-          .form-group
-            label.col-sm-2.control-label Name
-            .col-sm-10
-              input.form-control(type="text" placeholder="Name")
-          .form-group
-            label.col-sm-2.control-label Email
-            .col-sm-10
-              input.form-control(type="email" placeholder="Email")
-          .form-group
-            label.col-sm-2.control-label Comment
-            .col-sm-10
-              textarea.form-control(rows="4" placeholder="Comment")
-          .form-group
-            .col-sm-offset-2.col-sm-10
-              button.btn.btn-default(type="submit") Submit
+          h2 Contact
+
+          .alert.alert-success(ng-if="contact.message") {{contact.message}}
+
+          form.form-horizontal(ng-submit="contact.sendEmail( contact.contact )")
+            .form-group
+              label.col-sm-2.control-label Name
+              .col-sm-10
+                input.form-control(ng-model="contact.contact.name" type="text" placeholder="Name")
+            .form-group
+              label.col-sm-2.control-label Email
+              .col-sm-10
+                input.form-control(ng-model="contact.contact.email" type="email" placeholder="Email")
+            .form-group
+              label.col-sm-2.control-label Comment
+              .col-sm-10
+                textarea.form-control(ng-model="contact.contact.comment" rows="4" placeholder="Comment")
+            .form-group
+              .col-sm-offset-2.col-sm-10
+                button.btn.btn-default(type="submit") Submit
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.
